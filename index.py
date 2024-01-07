@@ -8,6 +8,11 @@ app = Flask(__name__)
 def hello():
     return "hello"
 
+@app.route("/bye")
+def bye():
+    return "bye world"
+
+
 if __name__ == "__main__":
     app.run()
 
