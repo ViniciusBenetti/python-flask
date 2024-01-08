@@ -1,6 +1,7 @@
 from flask import Flask
 import ctypes
 import time
+from flask_cors import CORS
 
 i = 0
 
@@ -10,6 +11,8 @@ def bilhaopython():
         i += 1
 
 app = Flask(__name__)
+
+CORS(app)
 
 lib = ctypes.CDLL("./python-flask/functions.so")
 
