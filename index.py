@@ -16,8 +16,10 @@ CORS(app)
 
 lib = ctypes.CDLL("./python-flask/functions.so")
 
-print("comecou")
 
+@app.route("/")
+def inicio():
+    return "/python para 1 bilhao em python, /c para 1 bilhao em c e /cpp para 1 bilhao em cpp"
 @app.route("/python")
 def umbilhaopython():
     global i
