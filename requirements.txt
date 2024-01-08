@@ -1,5 +1,5 @@
 gunicorn
 ctypes
 time
-Flask
+flask
 flask_cors
